@@ -33,14 +33,54 @@ updateValue([1, 2, 3], 1, 10); // => [1, 10, 3]
 
 // 4. a new array that returns the strings in the old array
 
-const onlyString = function (array2) {
-  for (let s = 0; s < array2.length; s++) {
-    if (array2[s] === String) {
-      let m = s - 1;
-      array2.slice(m, s);
-      console.log(array2);
-    }
-  }
-};
+const onlyString = function (array2) {};
 onlyString(["one", 12, "hi", true, 88, "12"]); // => ["one","hi","12"]
 onlyString([10, 20, 30, 40, 50, 60, false]); // => []
+
+//couldn't figure it out
+
+// 5. login function
+
+const users = [
+  ["Jane", "123456"],
+  ["admin", "abc123"],
+];
+
+const login = function (username, password) {
+  if (
+    (username === "Jane" && password === "123456") ||
+    (username === "admin" && password === "abc123")
+  ) {
+    console.log("Login Successful");
+  } else {
+    console.log("Login Failed");
+  }
+};
+
+login("Jane", "123456"); // => "Login Successful"
+login("Jane", "5321"); // => "Login Failed"
+login("Mark", "123456"); // => "Login Failed"
+login("admin", "abc123"); // => "Login Successful"
+login("admin", "aaabc123"); // => "Login Failed"
+
+// 6. maximum number of an array
+
+const maximumNumber = function (numbers) {
+  maxnum = Math.max(...numbers); //this is called spread syntax (...)
+  console.log(maxnum);
+};
+
+maximumNumber([0, 5, 2, 10, 8, 6]); // => 10
+maximumNumber([0, 5, 6]); // => 6
+maximumNumber([0, 5, 6, 12, 1]); // => 12
+
+// 7. reversed string
+
+const reversString = function (string) {
+  revStr = [...string].reverse().join(""); //spread syntax
+  console.log(revStr);
+};
+
+reversString("Hello"); // => "olleH"
+reversString("John"); // => "nhoJ"
+reversString("shahad"); // => "dahahs"
