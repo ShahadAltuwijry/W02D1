@@ -1,19 +1,16 @@
 // 1. sumation of two numbers
 
-let sum = function (a, b) {
-  sum = a + b;
+const sum = function (a, b) {
+  console.log(a + b);
 };
-console.log(sum);
 
 sum(5, 10);
 
 // 2. average numbers
 
-let average = function (c, d) {
-  average = (c + d) / 2;
+const average = function (c, d) {
+  console.log((c + d) / 2);
 };
-
-console.log(average);
 
 average(20, 5);
 
@@ -27,13 +24,13 @@ let findFactorial = function (num1) {
   }
 };
 
-num1 = 3;
+num1 = 6; // => 720
 findFactorial = findFactorial(num1);
 console.log(findFactorial);
 
 // 4. round number
 
-let round = function (number) {
+const round = function (number) {
   console.log(Math.round(number));
 };
 
@@ -42,11 +39,11 @@ console.log(round);
 
 // 5. power of number
 
-let toThePowerOf = function (base, exponent) {
+const toThePowerOf = function (base, exponent) {
   console.log(Math.pow(base, exponent));
 };
 
-toThePowerOf(2, 3);
+toThePowerOf(2, 3); // => 8
 console.log(toThePowerOf);
 
 // 6. random number
@@ -59,7 +56,7 @@ randomNumber();
 
 // 7. one or zero
 
-let oneOrZero = function (min, max) {
+const oneOrZero = function (min, max) {
   min = Math.ceil(0);
   max = Math.floor(1);
   console.log(Math.floor(Math.random() * (2 - 0)));
