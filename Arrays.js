@@ -33,11 +33,11 @@ updateValue([1, 2, 3], 1, 10); // => [1, 10, 3]
 
 // 4. a new array that returns the strings in the old array
 
-const onlyString = function (array2) {};
+const onlyString = function (array2) {
+  //couldn't figure it out yet
+};
 onlyString(["one", 12, "hi", true, 88, "12"]); // => ["one","hi","12"]
 onlyString([10, 20, 30, 40, 50, 60, false]); // => []
-
-//couldn't figure it out
 
 // 5. login function
 
